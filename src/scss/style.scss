@@ -1,0 +1,68 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~swiper/swiper-bundle.css";
+@import "reset";
+@import "colors";
+@import "./nice-select.scss";
+
+// PARTICLES
+@import "./particles/index";
+
+// SECTIONS
+@import "./sections/header";
+@import "./sections/slider";
+@import "./sections/popular";
+@import "./sections/counter";
+@import "./sections/navigation";
+@import "./sections/footer";
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  color: $color-main;
+  overflow-x: hidden;
+  background-color: #f2f6f7;
+}
+
+* {
+  outline: none;
+}
+
+a {
+  color: $color-main;
+  text-decoration: none;
+  &:hover {
+    color: $color-main;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.flex {
+  display: flex;
+}
+.ai-c {
+  align-items: center;
+}
+.fd-c {
+  flex-direction: column;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-fs {
+  justify-content: flex-start;
+}
+.jc-fe {
+  justify-content: flex-end;
+}

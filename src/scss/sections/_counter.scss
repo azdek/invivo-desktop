@@ -1,0 +1,129 @@
+@import "../colors";
+@import "../variables";
+
+.counter {
+  width: 100vw;
+  min-height: 420px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &__bg {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.2;
+    z-index: 1;
+    background: url("../img/counter.png") no-repeat center center / cover;
+  }
+
+  &__body {
+    position: relative;
+    width: 90%;
+    max-width: 1070px;
+    z-index: 2;
+  }
+
+  .count {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+
+    &__title {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      border: 3px solid $color-accent;
+      color: $color-accent;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      min-height: 50px;
+      font-size: 24px;
+    }
+  }
+}
+
+.video {
+  &__content {
+    max-width: 650px;
+    height: 340px;
+    margin: 30px auto 60px;
+    display: block;
+  }
+  .text {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+.map-container {
+  width: 100vw;
+  height: 370px;
+  margin: 40px 0;
+  position: relative;
+  background-color: $color-main;
+
+  .map-popup {
+    width: 433px;
+    height: 220px;
+    background-color: #f2f6f7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    padding: 0 25px 25px;
+    border: 1px solid $color-accent;
+
+    &.open {
+      display: flex;
+    }
+
+    &__close {
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    &-row {
+      width: 300px;
+      margin-top: 25px;
+      transition: all 0.2s;
+      cursor: pointer;
+      &:hover {
+        color: $color-accent;
+      }
+      &__icon {
+        margin-right: 15px;
+        width: 15px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #map {
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+  }
+}

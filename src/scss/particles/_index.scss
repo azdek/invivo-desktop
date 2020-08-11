@@ -1,0 +1,56 @@
+@import "../colors.scss";
+
+.button {
+  width: 178px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none !important;
+  &--secondary {
+    color: $color-dark;
+    border: 1px solid $color-dark;
+    &:hover {
+      color: $color-dark;
+    }
+  }
+  &--accent {
+    color: $color-accent;
+    border: 1px solid $color-accent;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+  &--main {
+    color: #fff;
+    background-color: $color-accent;
+    border: 1px solid $color-accent;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  img {
+    height: 15px;
+  }
+  &--secondary {
+    color: $color-dark;
+    border: 1px solid $color-dark;
+  }
+}

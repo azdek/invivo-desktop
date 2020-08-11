@@ -1,0 +1,67 @@
+@import "../colors";
+@import "../variables";
+
+.popular-slider {
+  margin-top: 130px;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .swiper-container-popular {
+    overflow: hidden;
+    padding: 30px 10px;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  &__description {
+    margin: 60px auto 50px;
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 815px;
+    text-align: center;
+  }
+
+  &__item {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+
+    .image {
+      width: 100%;
+      height: 180px;
+      position: relative;
+      overflow: hidden;
+      img {
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .title {
+      font-size: 20px;
+      line-height: 1em;
+      color: $color-main;
+      margin: 20px auto;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      height: calc(2em - 2px);
+      text-align: center;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

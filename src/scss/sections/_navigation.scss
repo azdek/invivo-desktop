@@ -1,0 +1,38 @@
+@import "../colors";
+@import "../variables";
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 80px;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__block {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin-bottom: 30px;
+
+    &__title {
+      color: $color-main;
+      font-size: 24px;
+      line-height: 28px;
+      border-bottom: 1px solid $color-main;
+      margin-bottom: 17px;
+    }
+    &__item {
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #a3a1a1;
+      transition: all 0.2s;
+    }
+  }
+}

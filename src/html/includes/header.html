@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+  <title><%=title%></title>
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="header__top--left flex ai-c">
+              <div class="flex ai-c">
+                <a href="" class="icon icon--secondary">
+                  <img src="img/icons/ig.svg" alt="">
+                </a>
+                <a href="" class="icon icon--secondary">
+                  <img src="img/icons/fb.svg" alt="">
+                </a>
+
+                <a href="" class="button button--secondary">Франчайзинг</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="header__top--right flex ai-c">
+
+              <div class="city flex ai-c">
+                <!-- class: open -->
+                <img class="city__icon" src="img/icons/map-mark.svg" alt="">
+                <div class="city__label flex ai-c">
+                  <p>Ваш город:</p>
+                  <span>Москва</span>
+                </div>
+                <img class="city__arrow" src="img/icons/arrow-down.svg" alt="">
+
+                <div class="city__popup">
+                  <div class="city__popup__label flex jc-c">
+                    <p>Вы находитесь в городе</p>
+                    <span>Москва</span>
+                  </div>
+                  <div class="city__popup__buttons flex ai-c jc-sb">
+                    <a href="" class="button button--secondary">Да, верно</a>
+                    <a href="" class="button button--accent">Изменить</a>
+                  </div>
+                  <div class="city__popup__descr">
+                    От выбранного города зависят цены <br> и способы оплаты.
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="sign flex ai-c">
+                <img class="sign__icon" src="img/icons/sign.svg" alt="">
+                <a href="">Вход/Регистрация</a>
+              </div>
+
+              <div class="lang button button--secondary flex ai-c">
+                <!-- class: open -->
+                <p>RU</p>
+                <img class="lang__arrow" src="img/icons/arrow-down.svg" alt="">
+
+                <ul class="lang__body">
+                  <a href="" class="flex ai-c jc-c">UA</a>
+                  <a href="" class="flex ai-c jc-c">KZ</a>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-news">
+
+      <div class="popup-news__body open">
+        <!-- class: open -->
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-md-12 h-100">
+              <div class="popup-news__content h-100 flex ai-c jc-c">
+                <a href="" class="popup-news__text">
+                  Всплывающая новость
+                </a>
+                <div class="popup-news__close">
+                  <img src="img/icons/close-big.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="header__mid">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-2">
+              <a href="/">
+                <img class="logo" src="img/invivo-logo.svg" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-10">
+              <div class="flex ai-c jc-fe">
+
+                <a class="phone flex jc-c fd-c ai-c" href="tel:+74950000000">
+                  <div class="phone__title flex ai-c jc-c">
+                    <img src="img/icons/phone.svg" alt="">
+                    <span>7 495 000 0 000</span>
+                  </div>
+                  <div class="phone__descr"></div>
+                </a>
+
+                <a class="phone flex jc-c fd-c ai-c" href="tel:+88000000000">
+                  <div class="phone__title flex ai-c jc-c">
+                    <img src="img/icons/phone.svg" alt="">
+                    <span>8 800 000 00 00</span>
+                  </div>
+                  <div class="phone__descr">Бесплатный звонок по России</div>
+                </a>
+
+                <div class="basket flex ai-c">
+                  <!-- class: open -->
+                  <img class="basket__icon" src="img/icons/basket.svg" alt="">
+                  <div class="flex fd-c ai-c jc-c">
+                    <div class="basket__title">Оформить заказ</div>
+                    <div class="basket__count">
+                      1 анализы / 200 руб.
+                    </div>
+                  </div>
+
+                  <div class="basket__body">
+                    <div>
+                      <div class="title">
+                        Мой заказ
+                      </div>
+                      <img class="close__icon" src="img/icons/close.svg" />
+                    </div>
+
+                    <div class="basket__list">
+                      <a href="" class="basket__item">
+                        <p class="name">Антитела к тиреоглобулину
+                          (АТ ТГ)</p>
+                        <p class="price">100 руб.</p>
+                        <img src="img/icons/tick.svg" alt="">
+                      </a>
+                      <a href="" class="basket__item">
+                        <p class="name">Забор крови одноразовыми
+                          системами</p>
+                        <p class="price">100 000 руб.</p>
+                        <img src="img/icons/tick.svg" alt="">
+                      </a>
+                    </div>
+
+                    <div class="basket__total flex ai-c">
+                      <p>Итого:</p>
+                      <span class="basket__total__count">200 руб.</span>
+                      <a class="basket__total__pay flex ai-c jc-c">Оплатить</a>
+                    </div>
+
+                    <div class="basket__clear">Очистить корзину</div>
+                  </div>
+                </div>
+
+                <a href="" class="button button--main results-btn">Получить результаты</a>
+                <a class="button button--main menu-btn">
+                  <img class="opened" src="img/icons/menu.svg" alt="">
+                  <img class="closed" src="img/icons/menu-close.svg" alt="">
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="header_nav">
+          <!-- class open -->
+          <nav class="nav">
+            <div class="nav__row">
+              <div class="nav__block">
+                <div class="nav__block__title">Пациентам</div>
+                <a href="" class="nav__block__item">Анализы и цены</a>
+                <a href="" class="nav__block__item">Справочник</a>
+                <a href="" class="nav__block__item">Подготовка к анализу</a>
+                <a href="" class="nav__block__item">Личный кабинет</a>
+                <a href="" class="nav__block__item">Скидки</a>
+                <a href="" class="nav__block__item">Акции</a>
+                <a href="" class="nav__block__item">Вызов на дом</a>
+              </div>
+
+              <div class="nav__block">
+                <div class="nav__block__title">Как нас найти?</div>
+                <a href="" class="nav__block__item">Адреса пунктов приёма</a>
+                <a href="" class="nav__block__item">Контак-центр</a>
+              </div>
+
+              <div class="nav__block">
+                <div class="nav__block__title">Лаборатория</div>
+                <a href="" class="nav__block__item">О нас</a>
+                <a href="" class="nav__block__item">Команда</a>
+                <a href="" class="nav__block__item">Обарудование</a>
+                <a href="" class="nav__block__item">Видео о нас</a>
+                <a href="" class="nav__block__item">Сертификаты</a>
+                <a href="" class="nav__block__item">Отзывы</a>
+                <a href="" class="nav__block__item">Вакансии</a>
+              </div>
+            </div>
+
+            <div class="nav__row">
+              <div class="nav__block">
+                <div class="nav__block__title">Врачам</div>
+                <a href="" class="nav__block__item">Почему стоит <br><br> сотрудничать с нами?</a>
+                <a href="" class="nav__block__item">Справочник</a>
+              </div>
+
+              <div class="nav__block">
+                <div class="nav__block__title">Партнёрам</div>
+                <a href="" class="nav__block__item">Франчайзинг</a>
+                <a href="" class="nav__block__item">Корпоративным клиентам</a>
+              </div>
+
+              <div class="nav__block">
+                <div class="nav__block__title">Новости</div>
+                <a href="" class="nav__block__item">Новости</a>
+                <a href="" class="nav__block__item">Статьи</a>
+                <a href="" class="nav__block__item">Акции</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__search">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="search__input flex ai-c jc-sb">
+                <input placeholder="Введите наименование исследования" />
+                <div class="search__clear flex ai-c jc-c">
+                  <img src="img/icons/close.svg" alt="">
+                </div>
+                <div class="search__magnify flex ai-c jc-c">
+                  <img src="img/icons/magnifier.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search__results open">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="results__list">
+                  <div class="results__item flex ai-c">
+                    <div class="name">Антитела к тиреоглобулину (АТ ТГ)</div>
+                    <div class="price">100 руб.</div>
+                    <div class="icon flex ai-c jc-c">
+                      <img src="img/icons/search-basket.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="results__item flex ai-c">
+                    <div class="name">Антитела к тиреопероксидазе (АТ ТПО, anti-TPO)</div>
+                    <div class="price">100 руб.</div>
+                    <div class="icon flex ai-c jc-c">
+                      <img src="img/icons/search-basket.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="results__item flex ai-c">
+                    <div class="name">Антитела к тиреопероксидазе (в розв.) (МА)</div>
+                    <div class="price">100 руб.</div>
+                    <div class="icon flex ai-c jc-c">
+                      <img src="img/icons/search-basket.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="results__item flex ai-c">
+                    <div class="name">Антитела к рецепторам ТТГ (АТрТТГ)</div>
+                    <div class="price">100 руб.</div>
+                    <div class="icon flex ai-c jc-c">
+                      <img src="img/icons/search-basket.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="results__item flex ai-c">
+                    <div class="name">Антитела к тиреоглобулину (АТ ТГ)</div>
+                    <div class="price">100 руб.</div>
+                    <div class="icon flex ai-c jc-c">
+                      <img src="img/icons/search-basket.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="results__item flex ai-c">
+                    <div class="name">Антитела к тиреопероксидазе (АТ ТПО, anti-TPO)</div>
+                    <div class="price">100 руб.</div>
+                    <div class="icon flex ai-c jc-c">
+                      <img src="img/icons/search-basket.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <div class="header__mockup"></div>
