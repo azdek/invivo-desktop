@@ -14,20 +14,20 @@ function listener() {
   $(window).scroll(function () {
     const ifDown =
       $(window).scrollTop() + $(window).height() >= $(window).height() * 1.5;
-    const ifFooter =
-      $(window).scrollTop() + $(window).height() >= $(document).height() - 200;
+    // const ifFooter =
+    //   $(window).scrollTop() + $(window).height() >= $(document).height() - 200;
     if (ifDown) {
       $goTop.css("transform", "translateX(0px)");
-      $goTop.css("width", "50px");
+      $goTop.css("width", "60px");
     } else {
       $goTop.css("transform", "translateX(1000px)");
       $goTop.css("width", "0px");
     }
-    if (ifFooter) {
-      $floatBlock.css("bottom", "200px");
-    } else {
-      $floatBlock.css("bottom", "50px");
-    }
+    // if (ifFooter) {
+    //   $floatBlock.css("bottom", "200px");
+    // } else {
+    //   $floatBlock.css("bottom", "50px");
+    // }
   });
 }
 

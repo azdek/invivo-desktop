@@ -10,7 +10,7 @@
   z-index: 1000;
 
   .logo {
-    height: 30px;
+    height: 60px;
   }
 
   &.closed_menu {
@@ -231,8 +231,11 @@
 
 .header__mid {
   background-color: #fff;
-  padding: 20px 0;
+  padding: 5px 0;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .header_nav {
     position: absolute;
@@ -448,6 +451,10 @@
     }
   }
 
+  .results__list {
+    max-height: 400px;
+    overflow: auto;
+  }
   .results__item {
     width: 100%;
     padding: 10px 0;
